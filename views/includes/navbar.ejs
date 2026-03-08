@@ -17,6 +17,27 @@
     border-radius: 25px;
     padding: 0.5rem 3rem 0.5rem 3rem;
   }
+  @media (max-width: 767px) {
+    .navbar-nav {
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    
+    .search-inp {
+        width: 100% !important; /* Forces search to be wide on mobile */
+        margin-bottom: 10px;
+    }
+  }
+  /* Tablet/Desktop: Refine spacing */
+  @media (min-width: 768px) {
+      .search-inp {
+          width: 300px !important; /* Keeps it neat on larger screens */
+      }
+      
+      .nav-link {
+          margin-right: 1rem;
+      }
+  }
 </style>
 
 <nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
