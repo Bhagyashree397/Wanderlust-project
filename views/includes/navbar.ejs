@@ -17,27 +17,22 @@
     border-radius: 25px;
     padding: 0.5rem 3rem 0.5rem 3rem;
   }
-  @media (max-width: 767px) {
-    .navbar-nav {
-        text-align: center;
-        padding-bottom: 1rem;
-    }
-    
-    .search-inp {
-        width: 100% !important; /* Forces search to be wide on mobile */
-        margin-bottom: 10px;
-    }
+@media (max-width: 767.98px) {
+  .nav-link[href="/signup"], 
+  .nav-link[href="/login"],
+  .nav-link[href="/logout"],
+  .navbar-text { 
+    display: none; 
   }
-  /* Tablet/Desktop: Refine spacing */
-  @media (min-width: 768px) {
-      .search-inp {
-          width: 300px !important; /* Keeps it neat on larger screens */
-      }
-      
-      .nav-link {
-          margin-right: 1rem;
-      }
+}
+@media (min-width: 768px) {
+  .nav-link[href="/signup"], 
+  .nav-link[href="/login"],
+  .nav-link[href="/logout"] {
+    display: inline-block;
+    margin-left: 1rem;
   }
+}
 </style>
 
 <nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
@@ -58,7 +53,7 @@
         </form>
       </div>
 
-      <div class="navbar-nav ms-auto">
+      <div class="navbar-nav ms-auto collapse navbar-collapse">
         <a class="nav-link" href="/listings/new">Airbnb your home</a>
         <% if(!currUser){ %>
           <a class="nav-link" href="/signup"><b>Sign up</b></a>
