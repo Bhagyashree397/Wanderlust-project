@@ -17,36 +17,12 @@
     border-radius: 25px;
     padding: 0.5rem 3rem 0.5rem 3rem;
   }
-@media (max-width: 767.98px) {
-  .nav-link[href="/signup"], 
-  .nav-link[href="/login"],
-  .nav-link[href="/logout"],
-  .nav-link[href="/listings/new"]{ 
-    .navbar-nav .navbar-collapse{
-      background-color: #fff; 
-      padding: 1rem;
-      border-radius: 10px;
-      margin-top: 10px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      text-align: center;
-  }
-}
-@media (min-width: 768px) {
-  .nav-link[href="/signup"], 
-  .nav-link[href="/login"],
-  .nav-link[href="/logout"] {
-    display: inline-block;
-    margin-left: 1rem;
-  }
-}
 </style>
 
 <nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="/listings"><i class="fa-regular fa-compass"></i></a>
-    <button class="navbar-toggler" type="button"  data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+    
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-link" href="/listings">Explore</a>
